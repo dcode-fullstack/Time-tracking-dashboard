@@ -1,23 +1,179 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import 'config';
+
+
 
 body {
-    background-color: pink;
-}
-
-footer {
+    // - Font size: 18px (card titles e.g. Work, Play)
+    // - Weights: 300, 400, 500
+    font-family: 'Rubik', sans-serif;
+    background-color: $Very-dark-blue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            #dashboard {
+                width: 200px;
+                background-color: $Dark-blue;
+                padding-bottom: 25px;
+                border-radius: 15px;
+
+
+                .person {
+                    background-color: $Desaturated-blue;
+                    padding: 30px 50px 30px 30px;
+                    margin-bottom: 50px;
+                    border-radius: 15px;
+
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 2px $Pale-Blue solid;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        color: $Pale-Blue;
+                        font-size: 13px;
+                    }
+
+                }
+
+                .timeframes {
+                    padding-left: 30px;
+                    color: white;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    color: $Pale-Blue;
+
+                    &:hover {
+                        font-weight: 500;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            .data {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 25px;
+
+                .activities {
+                    margin-top: 30px;
+                    background-color: $Dark-blue;
+                    border-radius: 15px;
+                    padding: 15px;
+                    border: 1px $Dark-blue solid;
+
+                    &>div {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        font-size: 13px;
+                        font-weight: 500;
+
+
+                    }
+
+                    &>h1 {
+                        padding-top: 7px;
+                    }
+
+                    &>p {
+                        margin-top: 10px;
+                        color: $Pale-Blue;
+                        font-size: 13px;
+                    }
+                }
+
+
+                #work-bg {
+                    background: url(/images/icon-work.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Light-red-work;
+                    border-radius: 15px;
+
+
+                }
+
+                #play-bg {
+                    background: url(/images/icon-play.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Soft-blue-play;
+                    border-radius: 15px;
+                }
+
+                #study-bg {
+                    background: url(/images/icon-study.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Light-red-study;
+                    border-radius: 15px;
+                }
+
+                #exercise-bg {
+                    background: url(/images/icon-exercise.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Lime-green-exercise;
+                    border-radius: 15px;
+                }
+
+                #social-bg {
+                    background: url(/images/icon-social.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Violet-social;
+                    border-radius: 15px;
+                }
+
+                #selfcare-bg {
+                    background: url(/images/icon-self-care.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: 95% 5px;
+                    background-color: $Soft-orange-self-care;
+                    border-radius: 15px;
+                }
+
+
+
+            }
+        }
+    }
+
+
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+// display: grid;
+// grid-template-areas: 'header section section section'
+// 'header section section section'
+// ;
+// grid-template-columns: repeat(4, 1fr);
+// grid-template-rows: 2fr 1fr 1fr;

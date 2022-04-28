@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,21 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: pink;
+h1 {
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.points:hover {
+  cursor: pointer;
+  font-weight: 600;
 }
 
 footer {
@@ -16,6 +30,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 25px;
 }
 
 .attribution {
@@ -25,4 +40,178 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+body .wrapper .container #dashboard {
+  width: 200px;
+  background-color: #1c1f4a;
+  padding-bottom: 25px;
+  border-radius: 15px;
+}
+
+body .wrapper .container #dashboard .person {
+  background-color: #6f76c8;
+  padding: 30px 50px 30px 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+body .wrapper .container #dashboard .person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px #bdc1ff solid;
+}
+
+body .wrapper .container #dashboard .person p {
+  margin-top: 15px;
+  color: #bdc1ff;
+  font-size: 13px;
+}
+
+body .wrapper .container #dashboard .timeframes {
+  padding-left: 30px;
+  color: white;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #bdc1ff;
+}
+
+body .wrapper .container #dashboard .timeframes:hover {
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+body .wrapper .container .data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+
+body .wrapper .container .data .activities {
+  margin-top: 30px;
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px #1c1f4a solid;
+}
+
+body .wrapper .container .data .activities > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body .wrapper .container .data .activities > h1 {
+  padding-top: 7px;
+}
+
+body .wrapper .container .data .activities > p {
+  margin-top: 10px;
+  color: #bdc1ff;
+  font-size: 13px;
+}
+
+body .wrapper .container .data #work-bg {
+  background: url(/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #ff8c66;
+  border-radius: 15px;
+}
+
+body .wrapper .container .data #play-bg {
+  background: url(/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #56c2e6;
+  border-radius: 15px;
+}
+
+body .wrapper .container .data #study-bg {
+  background: url(/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #ff5c7c;
+  border-radius: 15px;
+}
+
+body .wrapper .container .data #exercise-bg {
+  background: url(/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #4acf81;
+  border-radius: 15px;
+}
+
+body .wrapper .container .data #social-bg {
+  background: url(/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #7536d3;
+  border-radius: 15px;
+}
+
+body .wrapper .container .data #selfcare-bg {
+  background: url(/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 95% 5px;
+  background-color: #f1c65b;
+  border-radius: 15px;
 }
