@@ -99,16 +99,20 @@ body {
 
                     }
 
-                    &>h1 {
-                        padding-top: 5px;
-                        font-size: 35px;
+                    .details {
+                        &>h1 {
+                            padding-top: 5px;
+                            font-size: 35px;
+                        }
+
+                        &>p {
+                            margin-top: 5px;
+                            color: $Pale-Blue;
+                            font-size: 13px;
+                        }
                     }
 
-                    &>p {
-                        margin-top: 5px;
-                        color: $Pale-Blue;
-                        font-size: 13px;
-                    }
+
                 }
 
 
@@ -177,6 +181,7 @@ body {
 
 }
 
+@import 'media';
 
 // display: grid;
 // grid-template-areas: 'header section section section'

@@ -1,0 +1,102 @@
+@media(max-width: 920px) {
+    body {
+
+        .wrapper {
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+
+                #dashboard {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    position: relative;
+
+                    .person {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-content: center;
+
+                        &>div {
+                            margin-left: 30px;
+                        }
+                    }
+
+                    &>div {
+                        margin-right: 30px;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 660px) {
+    body {
+
+        .wrapper {
+            width: 90%;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #dashboard {
+                    margin-top: 200px;
+                }
+
+                .data {
+                    display: grid;
+                    grid-template-columns: repeat(2, 265px);
+                    grid-template-rows: repeat(3, 1fr);
+
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 620px) {
+    body {
+
+        .wrapper {
+
+            .container {
+                width: 100%;
+
+                #dashboard {
+                    margin-top: 750px;
+                }
+
+                .data {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    section {
+                        width: 100%;
+
+                        .details {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
