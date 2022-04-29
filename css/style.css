@@ -171,8 +171,8 @@ body .wrapper .container .data .activities > p {
 body .wrapper .container .data #work-bg {
   background: url(/images/icon-work.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5%;
   background-color: #ff8c66;
   border-radius: 15px;
 }
@@ -180,8 +180,8 @@ body .wrapper .container .data #work-bg {
 body .wrapper .container .data #play-bg {
   background: url(/images/icon-play.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5px;
   background-color: #56c2e6;
   border-radius: 15px;
 }
@@ -189,8 +189,8 @@ body .wrapper .container .data #play-bg {
 body .wrapper .container .data #study-bg {
   background: url(/images/icon-study.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5px;
   background-color: #ff5c7c;
   border-radius: 15px;
 }
@@ -198,8 +198,8 @@ body .wrapper .container .data #study-bg {
 body .wrapper .container .data #exercise-bg {
   background: url(/images/icon-exercise.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5px;
   background-color: #4acf81;
   border-radius: 15px;
 }
@@ -207,8 +207,8 @@ body .wrapper .container .data #exercise-bg {
 body .wrapper .container .data #social-bg {
   background: url(/images/icon-social.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5px;
   background-color: #7536d3;
   border-radius: 15px;
 }
@@ -216,8 +216,8 @@ body .wrapper .container .data #social-bg {
 body .wrapper .container .data #selfcare-bg {
   background: url(/images/icon-self-care.svg);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 95% 5px;
+  background-size: 50px;
+  background-position: 95% -5px;
   background-color: #f1c65b;
   border-radius: 15px;
 }
