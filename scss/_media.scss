@@ -2,6 +2,7 @@
     body {
 
         .wrapper {
+            margin-top: 50px;
 
             .container {
                 display: flex;
@@ -15,7 +16,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-content: center;
-                    position: relative;
+
 
                     .person {
                         width: 100%;
@@ -47,38 +48,9 @@
             width: 90%;
 
             .container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                #dashboard {
-                    margin-top: 200px;
-                }
-
-                .data {
-                    display: grid;
-                    grid-template-columns: repeat(2, 265px);
-                    grid-template-rows: repeat(3, 1fr);
-
-
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 620px) {
-    body {
-
-        .wrapper {
-
-            .container {
                 width: 100%;
+                margin-top: 650px;
 
-                #dashboard {
-                    margin-top: 750px;
-                }
 
                 .data {
                     width: 100%;
@@ -90,9 +62,14 @@
                     section {
                         width: 100%;
 
-                        .details {
-                            display: flex;
-                            align-items: center;
+                        .activities {
+
+                            .details {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
                         }
                     }
                 }

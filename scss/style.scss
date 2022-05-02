@@ -72,6 +72,11 @@ body {
                         color: white;
                         cursor: pointer;
                     }
+
+                    &:active {
+                        font-weight: 500;
+                        color: white;
+                    }
                 }
             }
 
@@ -95,11 +100,15 @@ body {
                         margin-bottom: 15px;
                         font-size: 13px;
                         font-weight: 500;
-
-
                     }
 
                     .details {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin: 0;
+
                         &>h1 {
                             padding-top: 5px;
                             font-size: 35px;
@@ -112,9 +121,10 @@ body {
                         }
                     }
 
-
+                    &:hover {
+                        opacity: 0.9;
+                    }
                 }
-
 
                 #work-bg {
                     background: url(/images/icon-work.svg);
@@ -123,8 +133,6 @@ body {
                     background-position: 95% -5%;
                     background-color: $Light-red-work;
                     border-radius: 15px;
-
-
                 }
 
                 #play-bg {
@@ -171,21 +179,9 @@ body {
                     background-color: $Soft-orange-self-care;
                     border-radius: 15px;
                 }
-
-
-
             }
         }
     }
-
-
 }
 
 @import 'media';
-
-// display: grid;
-// grid-template-areas: 'header section section section'
-// 'header section section section'
-// ;
-// grid-template-columns: repeat(4, 1fr);
-// grid-template-rows: 2fr 1fr 1fr;
